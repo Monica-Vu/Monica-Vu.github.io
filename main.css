@@ -1,0 +1,110 @@
+/* Reset the style */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  float: right;
+  font-size: 300%;
+}
+
+body {
+  background-color: white;
+  font-family: 'Futura', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 200%;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-size: 175%;
+  line-height: 155%;
+  font-weight: 400;
+}
+
+h4 {
+  font: 120%;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+}
+
+h5 {
+  font: 100%;
+  font-family: 'Futura', sans-serif;
+}
+
+p {
+  font-size: 70%;
+  line-height: 150%;
+}
+
+p a {
+  text-decoration: none;
+  color: black;
+}
+
+#name {
+  float: left;
+}
+
+header {
+  background-image: url("https://i.lensdump.com/i/XSEbP.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 85px;
+}
+
+/*--- pseduo-navigation bar starts here ---*/
+
+.one-fourth {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.one-fourth a {
+  text-decoration: none;
+  color: black;
+}
+
+#resume {
+  background-color: white;
+}
+
+#resumeDesc {
+  padding: 1%;
+  background-color: white;
+}
+
+#projects {
+  background-color: #f2f2f2
+}
+
+#projectsDesc {
+  background-color: #f2f2f2;
+}
+
+#designs {
+  background-color: #e6e6e6;
+}
+
+#contact {
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+#contactDesc {
+  background-color: #d9d9d9;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.dates {
+  float: left;
+}
