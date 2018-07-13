@@ -35,6 +35,7 @@ a.active {
 .main {
     margin-left: 200px; /* Same as the width of the sidenav */
     padding-left: 2%;
+    padding-right: 2%;
 }
 
 h1 {
