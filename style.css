@@ -28,7 +28,8 @@ body {
 }
 
 a.active {
-    color: white;
+    color: black;
+    background-color: white;
 }
 
 .main {
@@ -52,8 +53,11 @@ p {
   font-weight: 300;
 }
 
-.dates {
-  text-align: right;
+a {
+  font-size: 100%;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (max-height: 450px) {
