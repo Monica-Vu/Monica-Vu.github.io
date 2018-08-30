@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Futura", sans-serif;
     background-color: black;
 }
 
@@ -13,7 +13,7 @@ body {
   text-align: center;
   color: white;
   font-size: 65px;
-  font-family: "Lato", sans-serif;
+  font-family: "Futura", sans-serif;
 }
 
 #demo2 {
@@ -21,7 +21,7 @@ body {
   text-align: center;
   color: #818181;
   font-size: 35px;
-  font-family: "Lato", sans-serif;
+  font-family: "Futura", sans-serif;
   animation-delay: 2s;
 }
 
@@ -29,7 +29,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 15px;
-  font-family: "Lato", sans-serif;
+  font-family: "Futura", sans-serif;
   transition: 0.2s;
   padding: 25px 100px;
   font-weight: 100;

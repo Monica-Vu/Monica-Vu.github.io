@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,23 +12,28 @@ body {
 h1 {
   text-align: center;
   color: #000;
-  font-size: 35px;
+  font-size: 55px;
   font-family: "Futura", sans-serif;
   padding-top: 35px;
 }
 
 h5 {
-  text-align: center;
+  color: #000;
+  font-size: 25px;
+  font-family: "Futura", sans-serif;
+  padding-top: 35px;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-decoration: underline;
+
+}
+
+p,li, h6 {
   color: #000;
   font-size: 15px;
   font-family: "Futura", sans-serif;
-  padding-top: 35px;
-}
-
-p {
-  color: #000;
-  font-size: 10px;
-  font-family: "Futura", sans-serif;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .sidenav {
@@ -53,10 +59,6 @@ p {
     transition: 0.3s;
 }
 
-.sidenav a:hover{
-    color: #818181;
-}
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -76,14 +78,6 @@ p {
 }
 
 /*Image Gallery*/
-div.gallery:hover {
-    opacity: 0.5;
-}
-
-a {
-  text-decoration: none;
-}
-
 div.gallery img {
     width: 100%;
     height: auto;
@@ -91,10 +85,6 @@ div.gallery img {
 
 div.desc {
   text-align: center;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .responsive {
