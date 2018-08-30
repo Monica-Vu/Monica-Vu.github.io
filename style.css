@@ -80,6 +80,10 @@ div.gallery:hover {
     opacity: 0.5;
 }
 
+a {
+  text-decoration: none;
+}
+
 div.gallery img {
     width: 100%;
     height: auto;
