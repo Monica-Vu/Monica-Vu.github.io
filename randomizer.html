@@ -35,7 +35,7 @@ function pickOne() {
 var list = document.getElementById("list").value.trim();
 var list = document.getElementById("list").value.split(",");
 
-var randomnum = Math.floor((Math.random() * list.length ) )
+var randomNum = Math.floor((Math.random() * list.length ) )
 console.log(list + randomnum);
 document.getElementById('returnedText').innerHTML = list[randomnum];
 }
