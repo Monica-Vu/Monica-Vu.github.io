@@ -3,7 +3,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="main.css">
+<script src="script.js"></script>
 </head>
+
 <body>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNavigation()">&times;</a>
@@ -11,61 +13,11 @@
   <a href="works.html">Works</a>
   <a href="resume.html">Resume</a>
 </div>
-<span style="font-size:30px;cursor:pointer; float: right; margin-right: 10px; color: white;" onclick="openNavigation()">&#9776; </span>
-<script type="text/javascript">
-function openNavigation() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-function closeNavigation() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+
+<span style="font-size:40px;cursor:pointer; float: right; margin-right: 10px; color: white;" onclick="openNavigation()">&#9776; </span>
 
 <h1 id="demo"></h1>
 <h1 id="demo2"></h1>
-<h1 id="demo3"></h1>
 
-<script>
-var i = 0;
-var j = 0;
-var k = 0;
-var introText = 'Hello, my name is Monica.';
-var subText = 'I like to code and design';
-var aboutMeText = "<hr> <br> I currently a second-year undergraduate student majoring in Computer Science (software engineering stream) and minoring in statistics at Carleton University in Ottawa, Ontario." +
-"I do my best to write efficient, clean and bug-free as seen through my <strong> side projects </strong>." +
-" I am always excited to learn and explore new topics, languages, framworks, and techniques to solve different problems." +
-" I am currently seeking an internship or co-op position for Summer 2019 [and until Fall 2019 if possible]." +
-"<br> <br> During my free time, I play ultimate recreationally and attend events around Ottawa (or within a reasonable distance) that interest me. You may see me attending computer science events around the city as well." +
- "<br><br>Find out more about me through <b>my resume</b> or <b>contact me</b> in one of these ways. <br>" +
- "<br><hr>";
-
-function introduction() {
-	setTimeout(typing, 100)
-  setTimeout(typing2, 2000)
-  setTimeout(typing3, 4200)
-}
-
-function typing() {
-  if (i < introText.length) {
-    document.getElementById("demo").innerHTML += introText.charAt(i);
-    i++;
-    setTimeout(typing, 50);
-  }
-}
-
-function typing2() {
-if (j < subText.length) {
-    document.getElementById("demo2").innerHTML += subText.charAt(j);
-    j++;
-    setTimeout(typing2, 50);
-  }
-}
-
-function typing3() {
-  document.getElementById("demo3").innerHTML = aboutMeText;
-}
-
-introduction()
-</script>
 </body>
 </html>
