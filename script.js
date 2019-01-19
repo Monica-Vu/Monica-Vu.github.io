@@ -17,7 +17,7 @@ function introduction() {
 
 function typing() {
   if (i < introText.length) {
-    document.getElementById("demo").innerHTML += introText.charAt(i);
+    document.getElementById("greetingText").innerHTML += introText.charAt(i);
     i++;
     setTimeout(typing, 50);
   }
@@ -25,7 +25,7 @@ function typing() {
 
 function typing2() {
 if (j < subText.length) {
-    document.getElementById("demo2").innerHTML += subText.charAt(j);
+    document.getElementById("nameText").innerHTML += subText.charAt(j);
     j++;
     setTimeout(typing2, 50);
   }
