@@ -67,23 +67,76 @@ body {
   clear: both;
 }
 
-@media only screen and (max-width: 720px) {
+.button {
+  display: inline-block;
+  background-color: #ACA7CB;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  visibility: hidden;
+  transition: width 2s;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media only screen and (max-width: 770px) {
   .responsive {
       width: 100%;
   }
 
-  #demo2 {
+  #nameText {
     font-size: 3em;
-    margin-left: 3.444em;
+    margin-left: 0.875em;
+  }
+
+  #greetingText { 
+    margin-left: 0.2em;
   }
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
   .sidenav {
     padding-top: 15px;
   }
 
   .sidenav a {
     font-size: 18px;
+  }
+
+  #nameText {
+    font-size: 2.3;
+    margin-left: 0.85em;
   }
 }
