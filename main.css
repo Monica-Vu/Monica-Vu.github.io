@@ -84,6 +84,12 @@ body {
   position: fixed;
   visibility: hidden;
   transition: width 2s;
+  font-family: "Avenir";
+  font-weight: 100;
+}
+
+.button:hover {
+  opacity: 0.9;
 }
 
 .button span {
@@ -109,6 +115,15 @@ body {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+a {
+  font-family: "Avenir", sans-serif;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1em;
 }
 
 @media only screen and (max-width: 770px) {
