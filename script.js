@@ -7,13 +7,14 @@ function closeNavigation() {
 
 var i = 0;
 var j = 0;
+var k = 0;
 var introText = 'Hi.';
 var subText = "I'm Monica.";
 
 function introduction() {
     setTimeout(typing, 100);
     setTimeout(typing2, 2000);
-    setTimeout(buttonsPopUp, 3000);
+    $(".button").fadeIn(3000);
 }
 
 function typing() {
@@ -31,10 +32,5 @@ if (j < subText.length) {
     setTimeout(typing2, 50);
   }
 }
-
-function buttonsPopUp() {
-    var button = document.getElementById("worksButton").style.visibility = "visible";
-}
-
 
 introduction()
