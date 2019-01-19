@@ -33,4 +33,6 @@ if (j < subText.length) {
   }
 }
 
-introduction()
+$(document).ready(() => {
+    introduction()
+});
