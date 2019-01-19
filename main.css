@@ -4,35 +4,26 @@
 }
 
 body {
-    font-family: "Futura", sans-serif;
-    background-color: black;
+    font-family: "Avenir", sans-serif;
+    background-color:#1E1E1E;
 }
 
-#demo {
-  padding-top: 100px;
-  text-align: center;
+#greetingText {
+  padding-top: 10%;
+  text-align: left;
+  margin-left: 1em;
   color: white;
-  font-size: 65px;
-  font-family: "Futura", sans-serif;
+  font-size: 10em;
+  font-family: "Aveir", sans-serif;
 }
 
-#demo2 {
-  padding-bottom: 100px;
-  text-align: center;
-  color: #818181;
-  font-size: 35px;
-  font-family: "Futura", sans-serif;
+#nameText {
+  margin-left: 1.466em;
+  text-align: left;
+  color: #ACA7CB;
+  font-size: 7em;
+  font-family: "Avenir", sans-serif;
   animation-delay: 2s;
-}
-
-#demo3 {
-  text-align: center;
-  color: #fff;
-  font-size: 15px;
-  font-family: "Futura", sans-serif;
-  transition: 0.2s;
-  padding: 25px 100px;
-  font-weight: 100;
 }
 
 .sidenav {
@@ -53,13 +44,13 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #000;
+    color: #1E1E1E;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover{
-    color: #818181;
+    color: #ACA7CB;
 }
 
 .sidenav .closebtn {
@@ -68,6 +59,23 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 720px) {
+  .responsive {
+      width: 100%;
+  }
+
+  #demo2 {
+    font-size: 3em;
+    margin-left: 3.444em;
+  }
 }
 
 @media screen and (max-height: 450px) {
