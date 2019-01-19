@@ -16,14 +16,53 @@ h1 {
 }
 h2 {
     text-align: center;
-    font-size: 50px; 
+    font-size: 80px; 
     color: #ACA7CB;
     font-weight: 100;
 }
 
-p {
-    font-size: 12px; 
+h3 {
+    text-align: center;
+    font-size: 25px;
+    color: #1E1E1E;
+    font-weight: 100;
 }
+
+h4 {
+    text-align: left;
+    font-size: 35px;
+    text-transform: lowercase;
+    font-weight: 600;
+    margin-left: 2%;
+    color: #ACA7CB;
+    margin-top: 1.2em;
+}
+
+h5,li {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0 2%;
+    color: #1E1E1E;
+}
+
+p {
+    font-size: 14px; 
+}
+
+a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.leftfloat {
+    float: left;
+}
+
+.rightfloat {
+    float: right;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
