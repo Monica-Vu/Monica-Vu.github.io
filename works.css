@@ -36,7 +36,7 @@ h4 {
     font-weight: 600;
     margin-left: 2%;
     color: #ACA7CB;
-    margin-top: 1.2em;
+    margin-top: 0.8em;
 }
 
 h5,li {
@@ -106,7 +106,106 @@ a:hover {
     margin-left: 50px;
 }
 
-@media only screen and (max-width: 500px) {
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 96%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Avenir";
+    font-size: 20px;
+    margin: 0 2%;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+.panel li, p {
+    font-family: "Avenir";
+    font-size: 16px;
+    margin: 5px 45px;
+}
+
+.panel {
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ACA7CB;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    visibility: hidden;
+    transition: width 2s;
+    font-family: "Avenir";
+    font-weight: 100;
+    z-index: 1;
+    height: 5%;
+    visibility: visible;
+  }
+  
+  .button a {
+    font-family: "Avenir", sans-serif;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7em;
+    margin: 30px;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  @media only screen and (max-width: 500px) {
     .responsive {
         width: 100%;
     }
@@ -118,14 +217,8 @@ a:hover {
     clear: both;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
+.active, .accordion:hover {
+    background-color: #ccc;
 }
 
 /*Image Gallery*/
@@ -158,64 +251,12 @@ div.desc {
     }
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
 
-/* .accordion {
-    background-color: #eee;
-    color: #1E1E1E;
-    cursor: pointer;
-    margin-left: 2%;
-    width: 96%;
-    padding: 10px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.1s;
-    font-family: "Avenir";
-} */
-
-.active, .accordion:hover {
-    background-color: #ccc;
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    font-family: "Avenir";
-    font-size: 15px;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-
-.panel,li {
-    /* padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden; */
-    transition: max-height 0.2s ease-out;
-    font-family: "Avenir";
-    font-size: 12px;
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+    .sidenav a {
+        font-size: 18px;
+    }
 }
