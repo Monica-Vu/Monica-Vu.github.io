@@ -1,6 +1,7 @@
 function openNavigation() {
     document.getElementById("mySidenav").style.width = "100%";
 }
+
 function closeNavigation() {
     document.getElementById("mySidenav").style.width = "0";
 }
@@ -17,19 +18,19 @@ function introduction() {
 }
 
 function typing() {
-  if (i < introText.length) {
-    document.getElementById("greetingText").innerHTML += introText.charAt(i);
-    i++;
-    setTimeout(typing, 50);
-  }
+    if (i < introText.length) {
+        document.getElementById("greetingText").innerHTML += introText.charAt(i);
+        i++;
+        setTimeout(typing, 50);
+    }
 }
 
 function typing2() {
-if (j < subText.length) {
-    document.getElementById("nameText").innerHTML += subText.charAt(j);
-    j++;
-    setTimeout(typing2, 50);
-  }
+    if (j < subText.length) {
+        document.getElementById("nameText").innerHTML += subText.charAt(j);
+        j++;
+        setTimeout(typing2, 50);
+    }
 }
 
 function buttonsPopUp() {
@@ -37,3 +38,22 @@ function buttonsPopUp() {
 }
 
 introduction()
+
+var acc = document.getElementsByClassName("accordion");
+var x;
+
+$(document).ready( () => {
+    for (x = 0; x < acc.length; x++){ 
+        acc[x].addEventListener("click", function() {
+
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    }
+)
+
