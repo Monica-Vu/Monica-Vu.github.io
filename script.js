@@ -33,8 +33,7 @@ if (j < subText.length) {
 }
 
 function buttonsPopUp() {
-    var button = document.getElementById("worksButton").style.visibility = "visible";
+    document.getElementById("worksButton").style.visibility = "visible";
 }
-
 
 introduction()
