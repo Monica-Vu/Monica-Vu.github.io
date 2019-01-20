@@ -45,7 +45,9 @@ var x;
 $(document).ready( () => {
     for (x = 0; x < acc.length; x++){ 
         acc[x].addEventListener("click", function() {
+            console.log(`Accordion Clicked`);
             var panel = this.nextElementSibling;
+            console.log(`Next Sibling: ${panel.style.maxHeight}`);
             if (panel.style.display === "block") {
                 panel.style.display = "none";
             } else {
