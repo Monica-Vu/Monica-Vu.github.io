@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device width, intial-scale=1">
+  <title> Monica Vu </title>
+  <link rel="stylesheet" type="text/css" href="random.css" />
+  <script src="random.js"></script>
+</head>
+
+<body>
+<div class ="container">
+    <center>
+  <h1> Return Something </h1>
+  <p> This form returns one item from your list or randomizes your list (depending on which option you choose).
+    Not sure about the limit of items that can be entered or even the number of characteristics but let me know if that changes.
+    Double click on your generated item or list to clear it.
+  </p>
+<textarea id ="list" rows="10" cols="50"></textarea>
+<br>
+<button type ="button" class="button" onclick ="pickOne()"> Pick one! </button>
+<button type ="button" class="button" onclick ="randomize()"> Randomize!</button>
+<button type ="button" class="button" onclick="document.getElementById('list').value = ''" onclick="clearReturnedText()"> Clear Text Area </button>
+<br />
+<br />
+<b ondblclick="clearReturnedText()" id='returnedText'> </b></div>
+</center>
+</div>
+</body>
+</html>
