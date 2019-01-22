@@ -81,12 +81,12 @@ body {
   left: 0;
   bottom: 0;
   position: fixed;
-  visibility: hidden;
   transition: width 2s;
   font-family: "Avenir";
   font-weight: 100;
   z-index: 1;
   height: 20%;
+  opacity: 1;
 }
 
 .button a {
@@ -113,7 +113,7 @@ body {
 .button span:after {
   content: '\00bb';
   position: absolute;
-  opacity: 0;
+  opacity: 0.9;
   top: 0;
   right: -20px;
   transition: 0.5s;

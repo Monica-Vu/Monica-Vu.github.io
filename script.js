@@ -14,7 +14,6 @@ var subText = "I'm Monica.";
 function introduction() {
     setTimeout(typing, 100);
     setTimeout(typing2, 2000);
-    setTimeout(buttonsPopUp, 3000);
 }
 
 function typing() {
@@ -31,10 +30,6 @@ function typing2() {
         j++;
         setTimeout(typing2, 50);
     }
-}
-
-function buttonsPopUp() {
-    document.getElementById("worksButton").style.visibility = "visible";
 }
 
 introduction()
@@ -55,3 +50,13 @@ $(document).ready( () => {
     }
 });
 
+
+$(document).ready( () => {
+    $(".button").css("opacity", 0);
+    setTimeout( () => {
+        $(".button").animate( { opacity: 1 }, 700);
+    }, 3000);
+    setTimeout(() => {
+        $(".button").removeAttr("style");
+    }, 3800);
+});
