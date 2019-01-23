@@ -36,7 +36,7 @@ h4 {
     font-weight: 600;
     margin-left: 2%;
     color: #ACA7CB;
-    margin-top: 0.8em;
+    margin-top: 0.5em;
 }
 
 h5,li {
@@ -57,17 +57,6 @@ a {
 }
 
 a:hover {
-    color: #ACA7CB;
-}
-.leftfloat {
-    float: left;
-}
-
-.rightfloat {
-    float: right;
-}
-
-.i:hover {
     color: #ACA7CB;
 }
 
@@ -205,12 +194,6 @@ a:hover {
     right: 0;
   }
 
-  @media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
-
 .clearfix:after {
     content: "";
     display: table;
@@ -221,42 +204,65 @@ a:hover {
     background-color: #ccc;
 }
 
-/*Image Gallery*/
-div.gallery:hover {
+/*Works Portfolio*/
+
+/* this section of code is already mobile-already! */ 
+.container {
+    max-width: 100%;
+  }
+
+.responsive-image {
+    max-width: 100%;
+}
+
+.cell img {
+    display: block;
+}
+
+.cell img:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-div.desc {
-    text-align: center;
-}
-
-.responsive {
-    float: left;
-    width: 49.99999%;
-}
-
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
+@media screen and (min-width: 600px) {
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
     }
 
-    .sidenav a {
-        font-size: 18px;
+    .cell {
+        width: 50%;
+      }
+  }
+
+.br-on-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .accordion {
+        font-size: 12px;
+    }
+
+    .panel li, p, .title {
+        font-size: 10px;
+        margin: 5px 24px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    .br-on-mobile {
+        display: static;
     }
 }
