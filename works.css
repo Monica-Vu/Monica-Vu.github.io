@@ -109,6 +109,7 @@ a:hover {
     font-family: "Avenir";
     font-size: 20px;
     margin: 0 2%;
+    border: 2px solid white;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
