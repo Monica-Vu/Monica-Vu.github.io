@@ -34,23 +34,6 @@ function typing2() {
 
 introduction()
 
-var acc = document.getElementsByClassName("accordion");
-var x;
-
-$(document).ready( () => {
-    for (x = 0; x < acc.length; x++){ 
-        acc[x].addEventListener("click", function() {
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        })
-    }
-});
-
-
 $(document).ready( () => {
     $(".button").css("opacity", 0);
     setTimeout( () => {
@@ -59,4 +42,10 @@ $(document).ready( () => {
     setTimeout(() => {
         $(".button").removeAttr("style");
     }, 3800);
+
+    $(".accordion").click(function () {
+        console.log("this is a test");
+        $(this).nextAll("div").first().slideToggle();
+        // console.log(`$(this).nextAll("div").first(): ${$(this).nextAll("div").first().html()}`);
+    });
 });
