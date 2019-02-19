@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#welcomeText, #introduction {
+    color: black;
+    font-family: 'Avenir';
+    line-height: 0.8;
+    font-size: 10em;
+}
+
+#animationText {
+    top: 30%;
+    left: 10%;
+    position: absolute;
+    margin-left: 10px;
+}
+
+#introduction {
+    font-size: 6em;
+    margin-left: 6px;
+}
+
+.column {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0; 
+    background-color: white;
+}
+
+.right {
+    right: 0;
+    background: url("https://d29fhpw069ctt2.cloudfront.net/photo/52202/preview/npreview_1280x1280.jpg") no-repeat;
+    object-fit: cover;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    z-index: 2;
+    font-family: 'Avenir';
+  }
+  
+  .navMenuBar {
+    font-size:40px;
+    cursor:pointer; 
+    position: absolute;
+    margin-right: 10px; 
+    color: white;
+    top: 0;
+    right: 0;
+  }
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1E1E1E;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+color: #ACA7CB;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ACA7CB;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    width: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    transition: width 2s;
+    font-family: "Avenir";
+    font-weight: 100;
+    z-index: 1;
+    height: 4em;
+    opacity: 1;
+  }
+  
+  .button a {
+    font-family: "Avenir", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.7em;
+    margin: 30px;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+

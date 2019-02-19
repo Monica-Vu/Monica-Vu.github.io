@@ -1,314 +1,287 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: "Avenir", sans-serif;
-  background-color: #1E1E1E;
+    font-family: "Avenir", sans-serif;
+    background-color: white;
 }
 
-#greetingText {
-  padding-top: 10%;
-  text-align: left;
-  margin-left: 1em;
-  color: white;
-  font-size: 10em;
-  font-family: "Aveir", sans-serif;
+h2 {
+    text-align: center;
+    font-size: 80px;
+    color: #ACA7CB;
+    font-weight: 100;
 }
 
-#nameText {
-  margin-left: 1.466em;
-  text-align: left;
-  color: #ACA7CB;
-  font-size: 7em;
-  font-family: "Avenir", sans-serif;
-  animation-delay: 2s;
+h3 {
+    text-align: center;
+    font-size: 25px;
+    color: #1E1E1E;
+    font-weight: 100;
+}
+
+h4 {
+    text-align: left;
+    font-size: 35px;
+    text-transform: lowercase;
+    font-weight: 600;
+    margin-left: 2%;
+    color: #ACA7CB;
+    margin-top: 0.5em;
+}
+
+h5,li {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0 2%;
+    color: #1E1E1E;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+a:hover {
+    color: #ACA7CB;
 }
 
 .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  text-align: center;
-  z-index: 2;
-}
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    z-index: 2;
+    font-family: 'Avenir';
+  }
+  
+  .navMenuBar {
+    font-size:40px;
+    cursor:pointer; 
+    position: absolute;
+    margin-right: 10px; 
+    color: black;
+    top: 0;
+    right: 0;
+  }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #1E1E1E;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1E1E1E;
+    display: block;
+    transition: 0.3s;
 }
-
+  
 .sidenav a:hover {
-  color: #ACA7CB;
-}
+    color: #ACA7CB;
+    }
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 96%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Avenir";
+    font-size: 20px;
+    margin: 0 2%;
+    border: 2px solid white;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+.panel li, p {
+    font-family: "Avenir";
+    font-size: 16px;
+    margin: 5px 45px;
+}
+
+.panel {
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.title {
+    font-weight: 800;
 }
 
 .button {
-  display: inline-block;
-  background-color: #ACA7CB;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  width: 100%;
-  transition: all 0.5s;
-  cursor: pointer;
-  left: 0;
-  bottom: 0;
-  position: fixed;
-  transition: width 2s;
-  font-family: "Avenir";
-  font-weight: 100;
-  z-index: 1;
-  height: 20%;
-  opacity: 1;
-}
-
-.button a {
-  font-family: "Avenir", sans-serif;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.7em;
-  margin: 30px;
-}
-
-.button:hover {
-  opacity: 0.9;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0.9;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-@media only screen and (max-width: 770px) {
-  .responsive {
+    display: inline-block;
+    background-color: #ACA7CB;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
     width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    visibility: hidden;
+    transition: width 2s;
+    font-family: "Avenir";
+    font-weight: 100;
+    z-index: 1;
+    height: 5%;
+    visibility: visible;
+  }
+  
+  .button a {
+    font-family: "Avenir", sans-serif;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7em;
+    margin: 30px;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
   }
 
-  #nameText {
-    font-size: 3em;
-    margin-left: 0.875em;
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
   }
 
-  #greetingText {
-    margin-left: 0.2em;
+/* works page */ 
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+  h3, p {
+    font-size: 30px;
+    word-break: break-all;
+    color: #343a40;
+    text-align: center;
+    font-family: 'Avenir';
   }
 
-  .button {
-    height: 30%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .sidenav {
-    padding-top: 15px;
+  p {
+      font-size: 10px;
   }
 
-  .sidenav a {
-    font-size: 18px;
+  .row {
+    margin: 8px -16px;
   }
 
-  #nameText {
-    font-size: 2.3;
-    margin-left: 0.85em;
-  }
-}
-
-/* customizable snowflake styling */
-.snowflake {
-  color: #fff;
-  font-size: 2em;
-  font-family: Avenir, sans-serif;
-  text-shadow: 0 0 5px #000;
-  z-index: -1;
-  position: absolute;
-  animation-delay: 5s;
-}
-
-/* I "borrowed" this from Github and modified the animation a bit so I don't really know how to work with it */
-@-webkit-keyframes snowflakes-fall {
-  0% {
-    top: -10%
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
   }
 
-  100% {
-    top: 100%
-  }
-}
-
-@-webkit-keyframes snowflakes-shake {
-
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0)
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
   }
 
-  50% {
-    -webkit-transform: translateX(80px);
-    transform: translateX(80px)
-  }
-}
-
-@keyframes snowflakes-fall {
-  0% {
-    top: -10%
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
-  100% {
-    top: 100%
-  }
-}
-
-@keyframes snowflakes-shake {
-
-  0%,
-  100% {
-    transform: translateX(0)
+  /* Content */
+  .content {
+    padding: 15px;
   }
 
-  50% {
-    transform: translateX(80px)
+  .content img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
   }
-}
 
-.snowflake {
-  position: fixed;
-  top: -10%;
-  z-index: 9999;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-  -webkit-animation-duration: 10s, 13s;
-  -webkit-animation-timing-function: linear, ease-in-out;
-  -webkit-animation-iteration-count: infinite, infinite;
-  -webkit-animation-play-state: running, running;
-  animation-name: snowflakes-fall, snowflakes-shake;
-  animation-duration: 10s, 13s;
-  animation-timing-function: linear, ease-in-out;
-  animation-iteration-count: infinite, infinite;
-  animation-play-state: running, running
-}
-
-.snowflake:nth-of-type(0) {
-  left: 1%;
-  -webkit-animation-delay: 10s, 10s;
-  animation-delay: 10s, 10s
-}
-
-.snowflake:nth-of-type(1) {
-  left: 10%;
-  -webkit-animation-delay: 10s, 10s;
-  animation-delay: 10s, 10s
-}
-
-.snowflake:nth-of-type(2) {
-  left: 20%;
-  -webkit-animation-delay: 14s, 10s;
-  animation-delay: 16s, 8s
-}
-
-.snowflake:nth-of-type(3) {
-  left: 30%;
-  -webkit-animation-delay: 14s, 6s;
-  animation-delay: 14s, 12s
-}
-
-.snowflake:nth-of-type(4) {
-  left: 40%;
-  -webkit-animation-delay: 12s, 12s;
-  animation-delay: 12s, 12s
-}
-
-.snowflake:nth-of-type(5) {
-  left: 50%;
-  -webkit-animation-delay: 18s, 13s;
-  animation-delay: 18s, 13s
-}
-
-.snowflake:nth-of-type(6) {
-  left: 60%;
-  -webkit-animation-delay: 16s, 12s;
-  animation-delay: 16s, 12s
-}
-
-.snowflake:nth-of-type(7) {
-  left: 70%;
-  -webkit-animation-delay: 12.5s, 11s;
-  animation-delay: 12.5s, 11s
-}
-
-.snowflake:nth-of-type(8) {
-  left: 80%;
-  -webkit-animation-delay: 11s, 10s;
-  animation-delay: 17s, 10s
-}
-
-.snowflake:nth-of-type(9) {
-  left: 90%;
-  -webkit-animation-delay: 13s, 11.5s;
-  animation-delay: 13s, 11.5s
-}
-
-.snowflake:nth-of-type(10) {
-  left: 25%;
-  -webkit-animation-delay: 12s, 10s;
-  animation-delay: 12s, 10s
-}
-
-.snowflake:nth-of-type(11) {
-  left: 65%;
-  -webkit-animation-delay: 14s, 12.5s;
-  animation-delay: 14s, 12.5s
-}
+.content img:hover {
+      opacity: 0.7;
+      cursor: pointer;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
