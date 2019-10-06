@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="works.css">
+<link rel="stylesheet" type="text/css" href="resume.css">
+<script src="jquery-v3.js"></script>
 <script src="script.js"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -18,54 +17,204 @@
 
 <span style="font-size:30px;cursor:pointer; float: right; margin-right: 10px; color: #000;" onclick="openNavigation()">&#9776; </span>
 
+</br> 
+</br> 
 <h2> MONICA <b> VU </b> </h2>
-<h3> City of Ottawa (Nepean) </h3>
-<a href="mailto:vu.monica.05@gmail.com" > <h3> vu.monica.05@gmail.com </a>|  cell: 613 707 9591 | <a target="_blank"  href="https://www.linkedin.com/in/vu-monica/"> <i class="fa fa-linkedin" style="color:#1E1E1E; font-weight: 10;"></i> </a> | <a target="_blank"  href="https://github.com/Monica-Vu"> Github </a> </h3>
+<h3> <a target="_blank" href="https://en.wikipedia.org/wiki/Nepean,_Ontario"> City of Ottawa (Nepean) </a> </h3> 
+<h3> <a href="mailto:vu.monica.05@gmail.com" > vu.monica.05@gmail.com </a> | cell: 613 707 9591 | <a target="_blank"  href="https://www.linkedin.com/in/vu-monica/"> LinkedIn </a> | <a target="_blank"  href="https://github.com/Monica-Vu">  Github </a> </h3>
 
 <h4> education </h4>
-<h5 class = "leftfloat"> Bachelor of Computer Science </h5>
-<h5 class = "rightfloat"> September 2017 - April 2022 (Expected) </h5>
-<div style="clear: both;"></div>
-<h5> Software Engineering Stream, Co-op Option </h5> 
-<h5> Minor in Statistics </h5> 
-<h5> Carleton University </h5> 
+<button class="accordion"> Bachelor of Computer Science (September 2017 - Present) at Carleton University </button>
+
+<div class="panel">
+  <li> Software Engineering Stream, Co-op Option (Honours) </li>
+  <li> Second-Year Standing </li> 
+  <li> Minor in Statistics </li>
+  <li> Overall CGPA: 9.93 / 12.0 (B+) </li> 
+  <li> Emmett Patrick Murphy Memorial Scholarship (2017) </li> 
+  <li> Expected Graduation Date: April 2022 </li> 
+</div>
 
 <h4> projects </h4>
-<h5 class = "leftfloat"> Syntax Table (Work in Progress) </h5>
-<h5 class = "rightfloat"> December 2018 - Present </h5>
-<div style="clear: both;"></div>
-<li> Built a web application in React using HTML, CSS and JavaScript that contains a table displaying syntax of various programming language to allow developers to look up syntax quickly and easily </li> 
-<li> Organized  the written content into a quick and easy-to-read table </li>
-<li> Verifying the correctness of the syntax for various programming languages in the table to ensure accuracy </li>  
+<button class="accordion"> Syntax Table - Work in Progress (February 2019 - Present) </button>
 
-</br> 
+<div class="panel">
+<p class="title"> Background (TL;DR): </p> 
+<p> When I was trying to learn different programming languages in my courses or my free time, I found myself having to spend quite a bit of time googling syntax for simple concepts such as print statements, for-loops, while loops, etc (assuming they exist in the programming language). 
+And so I had the idea of creating a table with concepts on the left-most column with programming languages 
+</p> 
 
-<h5 class = "leftfloat"> Personal Website </h5>
-<h5 class = "rightfloat"> October 2018 </h5>
-<div style="clear: both;"></div>
-<li> Built a responsive website using HTML, CSS, JavaScript to present persona and display side projects and works in an organized and accessible form </li>
-<li> Designed a simplistic graphical user interface to allow for easy nevigation </li>  
+<p class="title"> My Role: </p> 
+<p> Full-stack Developer, Design & Content Creator.  </p> 
 
-</br>
 
-<h5 class = "leftfloat"> Randomify </h5>
-<h5 class = "rightfloat"> July 2018 </h5>
-<div style="clear: both;"></div>
-<li>Programmed a responsive, single-page web application using HTML, CSS, and JavaScript that allows a user to enter a given number of items and returns an item chosen at random or returns a randomized list </li> 
-<li> Designed a UI to create a user-friendly and intuitive website </li> 
+<p class="title"> Learning: </p> 
+<p> 
+- How to put a lot of data in a neat and easy-to-copy format </br> 
+- How to summarize information </br> 
+- Making a community-friendly project </br> 
+</p>
+
+<p class="title"> Possible Improvements / Future Plans: </p> 
+<p> Future plans include: a more sophisticated user interface, putting it up on a server (likely Heroku) </p> 
+
+</div>
+
+<button class="accordion"> Personal Website (October 2018) </button>
+
+<div class="panel">
+<p class="title"> Background (TL;DR): </p> 
+<p> I wanted to create a personal website to allow employers to learn more about me and to display my works and projects. I also wanted to create my first side project!  
+</p> 
+
+<p class="title"> My Role: </p> 
+<p> I was involved in all aspects of the development, design and content creation. </p> 
+
+
+<p class="title"> Learnt and Learning: </p> 
+<p> 
+- First exposure to HTML, CSS, CSS Animations, and JavaScript. </br> 
+- Getting more familiar with Jquery. </br>
+- Making the website mobile friendly and smoothier animations.  </br> 
+</p>
+
+<p class="title"> Possible Improvements / Future Plans: </p> 
+<p> - A more sophisticated user interface </br> 
+- Trying to become more efficient with my code. </br> 
+- Ensure website information is up to date including new projects, works or additional items in my resume. </br> 
+</p> 
+</div>
+
+<button class="accordion"> Randomizer (July 2018) </button>
+<div class="panel">
+<p class="title"> Background (TL;DR): </p> 
+<p> My friends and I always had a hard time deciding where to go. So I decide to make a website where we can enter a list of items seperated by commas and returns either one element or a randomized list.    </p> 
+
+<p class="title"> My Role: </p> 
+<p> I was involved in all aspects of the development, design and content creation. </p> 
+
+<p class="title"> Learnt/Learning: </p> 
+<p> Creating a responsive website using HTML, CSS and Javascript (particularly how to deal with user input.  </p>
+
+<p class="title"> Possible Improvements / Future Plans: </p> 
+<p> - A more sophisticated user interface </br> 
+- Trying to become more efficient with my code. </br> 
+</p> 
+</div>
 
 <h4> skills </h4>
-<h5> Proficient: HTML, CSS, Python, Java </h5> 
-<h5> Practiced: JavaScript, C++, Photoshop, Node.js </5> 
-<h5> Learning: React.js, C, Sketch, SQL </h5> 
+<p style="margin-left: 2%; margin-top: 0;"> <b> Proficient: </b> HTML, CSS, Python, Java</p> 
+<p style="margin-left: 2%; margin-top: 0;"> <b> Practiced: </b> JavaScript, C++, Node.js, PhotoShop</p> 
+<p style="margin-left: 2%; margin-top: 0;"> <b> Learning: </b> React.js, C, Sketch, Clojure </p> 
 
-<h4> languages </h4>
-<li> English </li> 
-<li> French </li>
-<li> Vietnamese </li> 
-<li> Filipino (Tagolog) </li>
+<h4> work experience </h4>
+<button class="accordion"> Incoming Software Developer at Ericsson (May 2019 - December 2019) at Ottawa, ON </button>
+<div class="panel">
 
-<br> 
+<p class="title"> My Role: </p> 
+<p> I am going to be Software Developer in the Bussiness Area Analytics Team at Ericsson. </p> 
+
+<p class="title"> Will learn: </p> 
+<p> 
+- Lots of new technology (ex/ Clojure) </br> 
+- How to work in an AGILE enviroment 
+</p>
+</div> 
+
+<button class="accordion"> Winner's (May 2017 - July 2018) at Ottawa, ON </button>
+<div class="panel">
+
+<p class="title"> My Role: </p> 
+<p> 
+I was a part-time Sales Associate. I was considered a versatile worker and was cross-trained all departments (women, junior, home, men, kids, babies) except jewelery. 
+I could easily help other workers and pick up additional shifts from other collegues or if something needed to be done. 
+</p> 
+
+<p class="title"> Learnt: </p> 
+<p> 
+- Communicating with Management Team </br> 
+- Learning how to quickly jump from different tasks </br> 
+</p>
+</div> 
+
+<button class="accordion"> Tutor (November 2016 - June 2017) at Ottawa, ON </button>
+<div class="panel">
+
+<p class="title"> My Role: </p> 
+<p> I was a tutor at my old high school, Mother Teresa High School (now St. Mother Teresa High School). Primary subjects I tutored were Grade 9 mathemathics (academic and applied), Grade 9 English (academic and applied) and Grade 9 Science (academic). </p> 
+
+<p class="title"> Learnt: </p> 
+<p> - How to explain concepts into simple terms.  
+
+</p>
+</div> 
+
+<button class="accordion"> McDonald's (June 2016 - May 2017) at Ottawa, ON </button>
+<div class="panel">
+
+<p class="title"> My Role: </p> 
+<p> I was a part-time Crew Member during the time I worked at McDonald's. </p> 
+
+<p class="title"> Learnt/Learning: </p> 
+<p> As my first "official job", I learned about how to be a good team player, how to work in a team, how to be a quick and effective worker, and how to deal with customers. I also improved my oral communications skills as I was required to constantly interacting with customer to maximize their experience at the restaurant in a fast-paced enviroment. </p> 
+</div> 
+
+<h4> extracurricular </h4>
+<button class="accordion"> WiCS Web Developer (January 2019 - Present) at Carleton University </button>
+<div class="panel">
+<p class="title"> Background (TL;DR): </p> 
+<p>  WiCS was looking for a web designer and after  </p> 
+
+<p class="title"> My Role: </p> 
+<p> 
+I was a web developer for Carleton University's Women in Computer Science. I mainly focused on creating the website, but expand to all tasks that were tech-related and assisted the representative in other aspects of the society to promote a positive enviroment for women and trying to include more males in our events. 
+</p> 
+
+<p class="title"> Learnt/Learning: </p> 
+<p>  
+- How to make a product based on client's needs 
+</p>
+
+<p class="title"> Possible Improvements / Future Plans: </p> 
+<p>  
+- add more content to the website 
+</p> 
+</div> 
+
+<button class="accordion"> Yearbook Editor (September 2014 - June 2017) at Ottawa, ON </button>
+<div class="panel">
+<p class="title"> Background (TL;DR): </p> 
+<p>   
+At first, I decided to take yearbook as a class to gain extra credit. However, I grew to love it and decided to pursue it as an extracirricular and eventually became one of the yearbook editors in my senior year. 
+</p> 
+
+<p class="title"> My Role: </p> 
+<p>  
+- I was a yearbook members for around two years ad heavily focused on creating graphics in Photoshop, designing layouts, and editing written content. In addition, I assisted any members who were behind in terms of work and took additional tasks once I completed my main tasks. </br>
+- In my last, I was promoted to yearbook editor and was mostly in charge of the graduation section (graphics, content creation and development). </br> 
+- During this time, our yearbook team was awarded Top 3 Yearbooks in Ontario in the 2014-2015 and 2015-2016 Year and Top 6 Yearsbook in Canada in the 2016-2017 </br> 
+</p> 
+
+<p class="title"> Learnt</p> 
+<p>   
+- How to developed a product under very tight deadlines and ensured quality was up-to-standard </br> 
+- How to create graphics in Photoshop </br> 
+- How to lead and motivate a team </br> 
+- How to give feedback (OREO style) </br> 
+</p>
+
+<p class="title"> Possible Improvements / Future Plans: </p> 
+<p>  
+- I wished I made better graphics in my 1st and 2nd year with year </br>
+- If I knew, I would have joined in grade 9 if I knew I could join (very random, I know) </br> 
+</p> 
+</div> 
+
+</br>
+</br>
+</br> 
+
+<button type ="button" class="button"> <span> "Traditional" Resume </span> </button> 
 
 </body>
-</html>
+</html> 

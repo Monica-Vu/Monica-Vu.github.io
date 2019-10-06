@@ -1,314 +1,88 @@
+/* TODO: swap px to rem */
+
+/* reset layout for easier styling */ 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: "Avenir", sans-serif;
-  background-color: #1E1E1E;
+    font-family: "Avenir", sans-serif;
+    background-color: white;
 }
 
-#greetingText {
-  padding-top: 10%;
-  text-align: left;
-  margin-left: 1em;
-  color: white;
-  font-size: 10em;
-  font-family: "Aveir", sans-serif;
+h1.name {
+    text-transform: uppercase;
+    font-size: 4rem;
 }
 
-#nameText {
-  margin-left: 1.466em;
-  text-align: left;
-  color: #ACA7CB;
-  font-size: 7em;
-  font-family: "Avenir", sans-serif;
-  animation-delay: 2s;
+h3.descriptionTitle {
+    text-transform: uppercase;
+    font-size: 1.25rem;
 }
 
+h4.description {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* apperance of the navigation bar (three lines) */ 
+#navBar {
+    font-size: 2rem;;
+    cursor:pointer; 
+    float: left; 
+    margin-top: 0.1rem; 
+    margin-left: 0.5rem; 
+    color: black;
+} 
+
+/* apperance of navigation selection */ 
 .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  text-align: center;
-  z-index: 2;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    z-index: 2;
 }
 
+/* apperance of each choice in the navigation bar */ 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #1E1E1E;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1E1E1E;
+    display: block;
+    transition: 0.3s;
 }
 
+/* apperance of each choice in the navigation bar when the user hovers each choice*/ 
 .sidenav a:hover {
-  color: #ACA7CB;
+    color: #ACA7CB;
+    text-decoration: none;
 }
 
+/* apperance of the close button ('x') of the navigation bar*/ 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.center {
+    transform: translateY(10%) translateX(-2%);
+    position: relative;
 }
 
-.button {
-  display: inline-block;
-  background-color: #ACA7CB;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  width: 100%;
-  transition: all 0.5s;
-  cursor: pointer;
-  left: 0;
-  bottom: 0;
-  position: fixed;
-  visibility: hidden;
-  transition: width 2s;
-  font-family: "Avenir";
-  font-weight: 100;
-  z-index: 1;
-  height: 20%;
-}
-
-.button a {
-  font-family: "Avenir", sans-serif;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.7em;
-  margin: 30px;
-}
-
-.button:hover {
-  opacity: 0.9;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-@media only screen and (max-width: 770px) {
-  .responsive {
-    width: 100%;
-  }
-
-  #nameText {
-    font-size: 3em;
-    margin-left: 0.875em;
-  }
-
-  #greetingText {
-    margin-left: 0.2em;
-  }
-
-  .button {
-    height: 30%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-
-  #nameText {
-    font-size: 2.3;
-    margin-left: 0.85em;
-  }
-}
-
-/* customizable snowflake styling */
-.snowflake {
-  color: #fff;
-  font-size: 2em;
-  font-family: Avenir, sans-serif;
-  text-shadow: 0 0 5px #000;
-  z-index: -1;
-  position: absolute;
-  animation-delay: 5s;
-}
-
-/* I "borrowed" this from Github and modified the animation a bit so I don't really know how to work with it */
-@-webkit-keyframes snowflakes-fall {
-  0% {
-    top: -10%
-  }
-
-  100% {
-    top: 100%
-  }
-}
-
-@-webkit-keyframes snowflakes-shake {
-
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0)
-  }
-
-  50% {
-    -webkit-transform: translateX(80px);
-    transform: translateX(80px)
-  }
-}
-
-@keyframes snowflakes-fall {
-  0% {
-    top: -10%
-  }
-
-  100% {
-    top: 100%
-  }
-}
-
-@keyframes snowflakes-shake {
-
-  0%,
-  100% {
-    transform: translateX(0)
-  }
-
-  50% {
-    transform: translateX(80px)
-  }
-}
-
-.snowflake {
-  position: fixed;
-  top: -10%;
-  z-index: 9999;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-  -webkit-animation-duration: 10s, 13s;
-  -webkit-animation-timing-function: linear, ease-in-out;
-  -webkit-animation-iteration-count: infinite, infinite;
-  -webkit-animation-play-state: running, running;
-  animation-name: snowflakes-fall, snowflakes-shake;
-  animation-duration: 10s, 13s;
-  animation-timing-function: linear, ease-in-out;
-  animation-iteration-count: infinite, infinite;
-  animation-play-state: running, running
-}
-
-.snowflake:nth-of-type(0) {
-  left: 1%;
-  -webkit-animation-delay: 10s, 10s;
-  animation-delay: 10s, 10s
-}
-
-.snowflake:nth-of-type(1) {
-  left: 10%;
-  -webkit-animation-delay: 10s, 10s;
-  animation-delay: 10s, 10s
-}
-
-.snowflake:nth-of-type(2) {
-  left: 20%;
-  -webkit-animation-delay: 14s, 10s;
-  animation-delay: 16s, 8s
-}
-
-.snowflake:nth-of-type(3) {
-  left: 30%;
-  -webkit-animation-delay: 14s, 6s;
-  animation-delay: 14s, 12s
-}
-
-.snowflake:nth-of-type(4) {
-  left: 40%;
-  -webkit-animation-delay: 12s, 12s;
-  animation-delay: 12s, 12s
-}
-
-.snowflake:nth-of-type(5) {
-  left: 50%;
-  -webkit-animation-delay: 18s, 13s;
-  animation-delay: 18s, 13s
-}
-
-.snowflake:nth-of-type(6) {
-  left: 60%;
-  -webkit-animation-delay: 16s, 12s;
-  animation-delay: 16s, 12s
-}
-
-.snowflake:nth-of-type(7) {
-  left: 70%;
-  -webkit-animation-delay: 12.5s, 11s;
-  animation-delay: 12.5s, 11s
-}
-
-.snowflake:nth-of-type(8) {
-  left: 80%;
-  -webkit-animation-delay: 11s, 10s;
-  animation-delay: 17s, 10s
-}
-
-.snowflake:nth-of-type(9) {
-  left: 90%;
-  -webkit-animation-delay: 13s, 11.5s;
-  animation-delay: 13s, 11.5s
-}
-
-.snowflake:nth-of-type(10) {
-  left: 25%;
-  -webkit-animation-delay: 12s, 10s;
-  animation-delay: 12s, 10s
-}
-
-.snowflake:nth-of-type(11) {
-  left: 65%;
-  -webkit-animation-delay: 14s, 12.5s;
-  animation-delay: 14s, 12.5s
+.firstName {
+    transform: translateX(27%) 
 }

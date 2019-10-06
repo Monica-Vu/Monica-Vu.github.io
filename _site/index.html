@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="main.css">
-<script src="script.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
 
+<head>
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+  <link rel='stylesheet' type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+  <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-
-<div class="snowflakes" aria-hidden="true">
-  <div class="snowflake" style="z-index: -1">
-  ❅
-  </div>
-  <div class="snowflake" style="z-index: -1">
-  ❆
-  </div>
-  <div class="snowflake" style="z-index: -1">
-  ❅
-  </div>
-  <div class="snowflake" style="z-index: -1">
-  ❆
-  </div>
-  <div class="snowflake" style="z-index: -1">
-  ❅
-  </div>
-  <div class="snowflake" style="z-index: -1">
-  ❆
-  </div>
-  <div class="snowflake" style="z-index: -1">
-    ❅
-  </div>
-  <div class="snowflake" style="z-index: -1">
-    ❆
-  </div>
-  <div class="snowflake" style="z-index: -1">
-    ❅
-  </div>
-  <div class="snowflake" style="z-index: -1">
-    ❆
-  </div>
-  <div class="snowflake" style="z-index: -1">
-    ❅
-  </div>
-  <div class="snowflake" style="z-index: -1">
-    ❆
-  </div>
-  <div class="snowflake" style="z-index: -1">
-    *
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNavigation()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="#">Works</a>
+    <a href="#">Resume</a>
   </div>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavigation()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="works.html">Works</a>
-  <a href="resume.html">Resume</a>
+  <span id="navBar" onclick="openNavigation()"> &#9776; </span>
+
+  <!-- Wraps two blue containers -->
+  <div class="center"> 
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <div class="col-12">
+        <div class="firstName">
+          <h1 class="name"> Monica </h1>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <img src="/Users/monicavu/Desktop/personalWebsite/Monica-Vu.github.io/images/forest.JPG"
+              alt="Girl in a forest" class="img-fluid">
+          </div>
+          <div class="col-6">
+            <h1 class="name"> Vu </h1>
+            <h4 class="description"> 3rd Year Student at Carleton University </h4>
+            <img src="/Users/monicavu/Desktop/personalWebsite/Monica-Vu.github.io/images/forest.JPG"
+              alt="Girl in a forest" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col-6">
+          <img src="/Users/monicavu/Desktop/personalWebsite/Monica-Vu.github.io/images/forest.JPG"
+            alt="Girl in a forest" class="img-fluid">
+          <h3 class="descriptionTitle"> <b> Past </b> </h3>
+          <h4 class="description"> <b> Software Developer </b> at <b> Ericsson </b> (May 2019 to December 2019) </h4>
+          <h4 class="description"> <b> Web Developer </b> at <b> Carleton University's Women in Computer Science </b>
+            (January
+            2019 to May 2019) </h4>
+        </div>
+        <div class="col-6">
+          <h3 class="descriptionTitle"> <b> Contact Me </b> </h3>
+          <h4 class="description"> Github, LinkedIn</h4>
+
+          <img src="/Users/monicavu/Desktop/personalWebsite/Monica-Vu.github.io/images/forest.JPG"
+            alt="Girl in a forest" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<span style="font-size:40px;cursor:pointer; float: right; margin-right: 10px; color: white;" onclick="openNavigation()">&#9776; </span>
-
-<h1 id="greetingText"></h1>
-<h1 id="nameText"></h1>
-
-<a href ="resume.html"> <button type ="button" class="button" id ="worksButton"> <span> Find out more about me  </span> </button> </a>
-
 </body>
+
 </html>
