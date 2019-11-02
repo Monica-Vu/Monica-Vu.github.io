@@ -18,8 +18,6 @@ $(document).ready( () => {
     }, 3800);
 
     $(".accordion").click(function () {
-        console.log("this is a test");
         $(this).nextAll("div").first().slideToggle();
-        // console.log(`$(this).nextAll("div").first(): ${$(this).nextAll("div").first().html()}`);
     });
 });

@@ -11,9 +11,20 @@ body {
     background-color: white;
 }
 
-h1.name {
+.resumeContent {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+h1.name, h1.resumeName {
     text-transform: uppercase;
     font-size: 4rem;
+}
+
+h1.resumeName {
+    text-align: center;
+    padding-top: 1.5rem;
+    text-transform: lowercase;
 }
 
 h3.descriptionTitle {
@@ -21,9 +32,30 @@ h3.descriptionTitle {
     font-size: 1.25rem;
 }
 
-h4.description {
+h3.resumeSubheader {
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ACA7CB;
+}
+
+h4.description, h4.resumeDescription  {
     font-size: 1rem;
     font-weight: 200;
+}
+
+h4.resumeDescription {
+    text-align: center;
+}
+
+a:link, a:visited  {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #CDCDCD;
+    text-decoration: none;
 }
 
 /* apperance of the navigation bar (three lines) */ 
@@ -79,10 +111,48 @@ h4.description {
 }
 
 .center {
-    transform: translateY(10%) translateX(-2%);
+    transform: translateY(5%) translateX(-2%);
     position: relative;
 }
 
 .firstName {
-    transform: translateX(27%) 
+    transform: translateX(27%); 
 }
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Avenir";
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+  }
+  
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel,li,p {
+    transition: max-height 0.2s ease-out;
+    font-family: "Avenir";
+    font-size: 0.7rem;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+p.skillsText {
+    font-size: 0.9em;
+}
+
