@@ -25,18 +25,28 @@ body {
   }
 
 .MainPicture {
-    position: absolute;
-    left: 37px;
-    top: 100px;
+    padding-top: 20px;
+    padding-left: 37px;
 }
 
 #introSection {
     width: 100%;
-    z-index: 10;
 }
-#GithubIcon {
-    width:20px;
+
+.item {
+    display: flex;
+    flex-direction: row;
+    padding-left: 37px;
+}
+
+.icon {
+    padding-right: 5px;
+    width: 20px;
     height: 20px;
+}
+
+svg:hover {
+    color: #337900;
 }
 
 h1.intro, h2.intro {
@@ -53,6 +63,9 @@ h2.intro {
     font-size: 1rem;
 }
 
+.item 
+
+/* RESUME */ 
 .resumeContent {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -96,7 +109,7 @@ a:link, a:visited  {
 }
 
 a:hover, a:active {
-    color: #CDCDCD;
+    color: #337900;
     text-decoration: none;
 }
 
@@ -138,7 +151,7 @@ a:hover, a:active {
 
 /* apperance of each choice in the navigation bar when the user hovers each choice*/ 
 .sidenav a:hover {
-    color: #ACA7CB;
+    color: #337900;
     text-decoration: none;
 }
 
@@ -197,4 +210,3 @@ a:hover, a:active {
 p.skillsText {
     font-size: 0.9em;
 }
-
