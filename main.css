@@ -123,6 +123,10 @@ a:hover, a:active {
     color: black;
 } 
 
+#navBar:hover {
+    color: #337900;
+}
+
 /* apperance of navigation selection */ 
 .sidenav {
     height: 100%;
