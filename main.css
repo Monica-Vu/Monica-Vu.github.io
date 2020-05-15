@@ -11,6 +11,48 @@ body {
     background-color: white;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.parent {
+    width: 100%;
+    flex-direction: column;
+  }
+
+.MainPicture {
+    position: absolute;
+    left: 37px;
+    top: 100px;
+}
+
+#introSection {
+    width: 100%;
+    z-index: 10;
+}
+#GithubIcon {
+    width:20px;
+    height: 20px;
+}
+
+h1.intro, h2.intro {
+    font-family: "Avenir", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    text-align: right;
+    text-transform: lowercase;
+}
+
+h2.intro {
+    color: #A4A4A4;
+    font-size: 1rem;
+}
+
 .resumeContent {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
