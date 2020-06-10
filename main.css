@@ -46,7 +46,7 @@ body {
 }
 
 svg:hover {
-    color: #337900;
+    color: #6d9eeb;
 }
 
 h1.intro, h2.intro {
@@ -109,7 +109,7 @@ a:link, a:visited  {
 }
 
 a:hover, a:active {
-    color: #337900;
+    color: #6d9eeb;
     text-decoration: none;
 }
 
@@ -124,7 +124,7 @@ a:hover, a:active {
 } 
 
 #navBar:hover {
-    color: #337900;
+    color: #6d9eeb;
 }
 
 /* apperance of navigation selection */ 
@@ -155,7 +155,7 @@ a:hover, a:active {
 
 /* apperance of each choice in the navigation bar when the user hovers each choice*/ 
 .sidenav a:hover {
-    color: #337900;
+    color: #6d9eeb;
     text-decoration: none;
 }
 
